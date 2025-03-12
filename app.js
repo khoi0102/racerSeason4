@@ -4,10 +4,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const healthRouter = require('./routes/health');
-const voiceRouter = require('./routes/voiceassistant');
+const indexRouter = require('./api/index');
+const usersRouter = require('./api/users');
+const healthRouter = require('./api/health');
+const voiceRouter = require('./api/voiceassistant');
 const app = express();
 
 // view engine setup
